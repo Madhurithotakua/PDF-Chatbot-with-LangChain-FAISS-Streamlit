@@ -1,0 +1,33 @@
+pip install streamlit langchain PyPDF2 faiss-cpu sentence-transformers
+
+
+💻 *Application Features*
+
+File Upload: Upload .txt or .pdf files.
+
+Chunking & Embedding:
+Chunk the text into smaller parts.
+Generate embeddings using Hugging Face models.
+
+FAISS Storage:
+Store the embeddings locally in FAISS for efficient search.
+
+Semantic Search:
+Search by entering a query and display the most relevant chunks with scores.
+
+
+
+*The application is ready with the following features:*
+
+Upload PDF → Extracts text using PyPDF2.
+Chunking → Splits text into smaller sections using LangChain.
+Embeddings → Uses Hugging Face embeddings model (sentence-transformers/all-MiniLM-L6-v2).
+FAISS Search → Creates a FAISS index for fast retrieval.
+Streamlit Frontend → Provides a simple UI to upload, display, and search the document.
+
+
+LangChain + Streamlit application that uses:
+
+Hugging Face for embedding generation.
+FAISS for local vector database storage and retrieval.
+Streamlit for the frontend UI to upload files, process chunks, and search for similar content.
